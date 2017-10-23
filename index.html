@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    >
-    <title>Robert McKenney | Demos</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="css/min/main.css"
-    >
-  </head>
-  <body>
-    <article class="container">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Victoria Edwards</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+<!-- Font Awesome -->
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<header>
+   <div class = "container">
+    <div class="navbar navbar-inverse">
+  <a class="logo" href="#"><img src="img/logo.png"></a>
+  <ul class="nav navbar-nav">
+    <li><a href="#intro"><i class="fa fa-home"></i><span> Link1 </span></a></li>
+   <li><a href="#about"><i class="fa fa-info-circle"></i><span> Link2 </span></a></li>
+   <li><a href="#work"><i class="fa fa-heart"></i><span> Link3 </span></a></li>
+   <li><a href="#contact"><i class="fa fa-briefcase"></i><span> Link4 </span></a></li>
+  
+  </ul>
+</div>
+    </div>
+</header>
+<body>
+  <section id="intro" class="text-intro no-padding-bottom">
+    <div class="container">
+     
       <div class="row">
-        <div class="col col-sm-7">
-          <h1 class="header-subtle">Profile</h1>
-          <h2 class="display-4">Robert L. McKenney</h2>
-          <p class="text-secondary">
-            Professor, Interactive Media Design<br>
-            School of Media and Design<br>
-            Algonquin College
-          </p>
-        </div>
-        <div class="col-4 col-sm-5  col-xl-4">
-          <img
-            src="img/rlm-headshot.png"
-            alt="Robert McKenney smiling"
-            class="img-fluid rounded-circle mb-3"
-          >
+        <div class="col-md-12 col-lg-10">
+          <h1>Hello!<br />I'm <span class="highlight">Victoria Edwards</span>, <br>a front-end <span class="highlight">developer</span> living in Ottawa</h1>
         </div>
       </div>
-      <p class="lead mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-      </p>
-      <button
-        type="button"
-        class="btn btn-primary float-right"
-      >Call to action!</button>
-    </article>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous">
-    </script>
-  </body>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="heading">About me</h2>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 text-left">
+                  <p></p>
+                  <p><img src="img/about.jpg" alt="This is me" class="image img-circle img-responsive"></p>
+                </div>
+                <div class="col-sm-6">
+
+                </div>
+      </section>
+      <section id="contact">
+      
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="heading">Contact</h2>
+              <div class="row">
+                <div class="col-md-8">
+                  <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+                    <div class="controls">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="name">Your firstname *</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your firstname" required="required" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="surname">Your lastname *</label>
+                            <input type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Your email *</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your  email" required="required" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Your message for us *</label>
+                        <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                      </div>
+                      <div class="text-center">
+                        <input type="submit" value="Send message" class="btn btn-primary btn-block">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title=""
+                    class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+              </div>
+       
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- map-->
+
+
+      </article>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+      </script>
+</body>
+
 </html>
